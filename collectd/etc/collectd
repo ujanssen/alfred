@@ -1,0 +1,55 @@
+#!/bin/bash
+### BEGIN INIT INFO
+# Provides:          Collectd Web Frontend
+# Required-Start:   
+# Required-Stop:    
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Manage the collectd web app python web server
+# Description:      
+### END INIT INFO
+
+RETVAL=1
+prog="collectd-web"
+
+start() {
+    echo -n $"Starting $prog: "
+    export HOME=/opt/collectd-web
+    daemon --name=$prog --chdir=/opt/collectd-web /opt/collectd-web/runserver.py 0.0.0.0 6666
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && exit 0
+    echo "Error starting $prog" 1>&2
+}
+
+stop() {
+    echo -n $"Stopping $prog: "
+    daemon --name=$prog --stop
+    RETVAL=$?
+}
+
+restart() {
+    stop
+    sleep 1
+    start
+}
+
+case "$1" in
+  start)
+    start
+    ;;
+  stop)
+    stop
+    ;;
+  restart)
+    restart
+    ;;
+  status)
+    cat /var/run/$prog.pid
+    RETVAL=$?
+    ;;
+  *)
+    echo $"Usage: $0 {start|stop|status|restart}"
+esac
+
+exit $RETVAL

@@ -14,15 +14,15 @@ Add volume to etc/netatalk/AppleVolumes.default
 
 Add file /etc/avahi/services/afpd.service:
 
-<?xml version="1.0" standalone='no'?><!--*-nxml-*-->
-<!DOCTYPE service-group SYSTEM "avahi-service.dtd">
-<service-group>
-  <name replace-wildcards="yes">%h</name>
-  <service>
-    <type>_afpovertcp._tcp</type>
-    <port>548</port>
-  </service>
-</service-group>
+	<?xml version="1.0" standalone='no'?><!--*-nxml-*-->
+	<!DOCTYPE service-group SYSTEM "avahi-service.dtd">
+	<service-group>
+	  <name replace-wildcards="yes">%h</name>
+	  <service>
+	    <type>_afpovertcp._tcp</type>
+	    <port>548</port>
+	  </service>
+	</service-group>
 
 Restart services:
 

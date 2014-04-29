@@ -38,3 +38,22 @@ List file systems:
 
 	NAME    USED  AVAIL  REFER  MOUNTPOINT
 	ultra   110K  1.78T    30K  /ultra
+
+Create file system:
+
+	zfs create ultra/documents
+
+Export file system:
+
+	zfs set sharenfs=rw=@192.168.0.0/24,insecure ultra/documents
+	zfs share ultra/documents
+	zfs share -a
+
+Use file system from mac:
+
+	nfs://nas/ultra/documents
+
+
+
+
+

@@ -53,6 +53,18 @@ Use file system from mac:
 
 	nfs://nas/ultra/documents
 
+Monitoring pool performance:
+
+	zpool iostat 2
+
+	               capacity     operations    bandwidth
+	pool        alloc   free   read  write   read  write
+	----------  -----  -----  -----  -----  -----  -----
+	tank        1.46T  1.26T     51      8  6.25M   585K
+	tank        1.46T  1.26T      0    477      0  43.5M
+	tank        1.46T  1.26T      0    592    255  65.1M
+	tank        1.46T  1.26T      0    607      0  60.1M
+	tank        1.46T  1.26T      0    669      0  72.8M
 
 
 

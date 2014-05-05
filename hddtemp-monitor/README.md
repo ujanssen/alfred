@@ -1,7 +1,7 @@
 hddtemp-monitor
 ===============
 
-Read HDD temperature and send it to Ganglia
+Read the HDD temperature and send it to Ganglia
 
 Install:
 	

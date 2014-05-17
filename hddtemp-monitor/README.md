@@ -5,6 +5,7 @@ Read the HDD temperature and send it to Ganglia
 
 Install:
 	
+	sudo apt-get install hddtemp
 	sudo mkdir /opt/hddtemp-monitor
 	sudo cp hddtemp-monitor.rb /opt/hddtemp-monitor
 	sudo cp hddtemp-monitor /etc/init.d/

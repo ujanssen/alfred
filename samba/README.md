@@ -6,7 +6,7 @@ Install and Configure Samba.
 Install:
 --------
 
-	apt-get install libcups2 samba samba-common
+	apt-get install libcups2 samba samba-common avahi-daemon
 
 Configure:
 ----------

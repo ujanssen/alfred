@@ -39,6 +39,10 @@ List file systems:
 	NAME    USED  AVAIL  REFER  MOUNTPOINT
 	ultra   110K  1.78T    30K  /ultra
 
+Disable atime:
+
+	sudo zfs set atime=off ultra
+	
 Create file system:
 
 	zfs create ultra/documents

@@ -53,3 +53,25 @@ To see which shares are available on a given host, run:
 
 	/usr/bin/smbclient -L host
 	
+Then:
+
+	/usr/bin/smbclient \\\\host\\tank passwd
+	
+	smb: \> help
+	?              allinfo        altname        archive        backup         
+	blocksize      cancel         case_sensitive cd             chmod          
+	chown          close          del            dir            du             
+	echo           exit           get            getfacl        geteas         
+	hardlink       help           history        iosize         lcd            
+	link           lock           lowercase      ls             l              
+	mask           md             mget           mkdir          more           
+	mput           newer          notify         open           posix          
+	posix_encrypt  posix_open     posix_mkdir    posix_rmdir    posix_unlink   
+	print          prompt         put            pwd            q              
+	queue          quit           readlink       rd             recurse        
+	reget          rename         reput          rm             rmdir          
+	showacls       setea          setmode        stat           symlink        
+	tar            tarmode        timeout        translate      unlock         
+	volume         vuid           wdel           logon          listconnect    
+	showconnect    tcon           tdis           tid            logoff         
+	..             ! 

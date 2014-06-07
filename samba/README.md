@@ -48,3 +48,8 @@ Restart services:
 
 	service avahi-daemon restart
 	service smbd restart
+
+To see which shares are available on a given host, run:
+
+	/usr/bin/smbclient -L host
+	

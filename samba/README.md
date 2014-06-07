@@ -75,3 +75,19 @@ Then:
 	volume         vuid           wdel           logon          listconnect    
 	showconnect    tcon           tdis           tid            logoff         
 	..             ! 
+
+Using share:
+
+	sudo apt-get install cifs-utils 
+	
+Create mountpoint:
+
+	sudo mkdir /mnt/tank
+	
+Add to /etc/fstab:
+
+	//nas/tank /mnt/tank cifs user=ujanssen,passwd=s3cret  0 0
+	
+Mount samba share:
+
+	mount /mnt/tank

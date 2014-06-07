@@ -86,7 +86,7 @@ Create mountpoint:
 	
 Add to /etc/fstab:
 
-	//nas/tank /mnt/tank cifs user=ujanssen,passwd=s3cret  0 0
+	//nas/tank /mnt/tank cifs vers=2.0,user=ujanssen,passwd=s3cret  0 0
 	
 Mount samba share:
 

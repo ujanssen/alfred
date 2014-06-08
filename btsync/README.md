@@ -1,6 +1,7 @@
 btsync
 ======
 
+Install and
 Configure a BitTorrent Sync Server. 
 
 Install:

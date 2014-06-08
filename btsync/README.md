@@ -1,8 +1,7 @@
 btsync
 ======
 
-Install and
-Configure a BitTorrent Sync Server. 
+Install and configure a BitTorrent Sync Server. 
 
 Install:
 
@@ -13,7 +12,6 @@ Install:
 Configure:
 
 	sudo dpkg-reconfigure btsync
-
 
 See:
 

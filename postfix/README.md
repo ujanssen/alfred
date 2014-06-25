@@ -1,17 +1,14 @@
-postfix
-=======
+# postfix
 
 Postfix send root mails via gmail ("Satellite System").
 
-Install
--------
+## Install
 
 	sudo apt-get install postfix libsasl2-modules bsd-mailx
 	sudo dpkg-reconfigure postfix
 
 
-Configure
----------
+##Configure
 
 /etc/postfix/main.cf:
 
@@ -60,8 +57,7 @@ Configure
 	root:	user@gmail.com
 
 
-Run
----
+## Run
 
 	sudo postmap hash:/etc/postfix/sender_canonical 
 	sudo postmap hash:/etc/postfix/sasl_password 
@@ -69,9 +65,9 @@ Run
 	sudo /etc/init.d/postfix restart 
 
 
-Test
-----
+## Test
+
 
 Mail from root:
 
-	mail root@localhost -s "test" < /var/log/mail.log
+	mail root@localhost -s test < /var/log/mail.log

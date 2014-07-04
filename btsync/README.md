@@ -1,18 +1,16 @@
-btsync
-======
+# btsync
 
 Configure a BitTorrent Sync Server. 
 
-Install:
+## Install:
 
 	sudo add-apt-repository ppa:tuxpoldo/btsync
 	sudo apt-get update
 	sudo apt-get install btsync 
 
-Configure:
+## Configure:
 
 	sudo dpkg-reconfigure btsync
-
 
 See:
 

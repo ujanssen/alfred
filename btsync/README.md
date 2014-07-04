@@ -1,6 +1,6 @@
 # btsync
 
-Configure a BitTorrent Sync Server. 
+Install and configure a BitTorrent Sync Server. 
 
 ## Install:
 

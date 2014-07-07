@@ -1,8 +1,7 @@
-sudo
-====
+#sudo
 
 sudo for user without passwd.
 
-Install:
+###Install
 
 	echo "ujanssen ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers 

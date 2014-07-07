@@ -1,15 +1,12 @@
-samba
-=====
+#samba
 
 Install and Configure Samba.
 
-Install:
---------
+###Install
 
 	apt-get install libcups2 samba samba-common avahi-daemon
 
-Configure:
-----------
+###Configure
 
 	smbpasswd -a ujanssen
 

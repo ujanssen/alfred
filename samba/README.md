@@ -87,4 +87,4 @@ Add to /etc/fstab:
 	
 Mount samba share:
 
-	mount /mnt/tank
+	sudo mount /mnt/tank
